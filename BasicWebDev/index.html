@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- #region TEMPLATE-START -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Secondary Blankslate</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ideal.accelerate-ed.com/Content/images/favicon.ico"
+    />
+    <!-- Styles -->
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/templates/high_school/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/bootstrap_custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/templates/high_school/site.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/layout.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Font Awesome V6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/colorbox/colorbox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/cupertino/jquery-ui-1.10.3.custom.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/math_interactives.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/animate.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- jQuery -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/jquery.1.9.1-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <!-- Knockout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
+    <!-- Math Interactives -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/uptown.js"></script>
+    <!-- Modernizr -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/modernizr-2.8.3.js"></script>
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+         tex2jax: {
+      	   inlineMath: [['$$$','$$$'], ['\\(','\\)'], ['`$','$`']],
+      	   processEscapes: true
+         }
+      });
+      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      	MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      		cancel: ["Extension","cancel"],
+      		bcancel: ["Extension","cancel"],
+      		xcancel: ["Extension","cancel"],
+      		cancelto: ["Extension","cancel"]
+      	});
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body class="oneColLiqCtr">
+    <!-- Loading -->
+    <div id="preloader" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <!-- Main Container -->
+    <div id="container">
+      <!-- Content Container -->
+      <div id="contentContainer">
+        <!-- Top Header & Navigation -->
+        <header>
+          <div id="top-navigation">
+            <div class="row middle-xs">
+              <div class="col-sm-9 col-xs-12">
+                <div class="icon-and-header">
+                  <div class="icon"></div>
+                  <nav role="navigation">
+                    <h1 class="title" id="idealMenuTocContents">
+                      <span class="idealMenuTocSelected"
+                        >Example Page Title
+                        <button class="dropdownButton">
+                          <i
+                            class="fas fa-bars"
+                            title="Open navigation"
+                            aria-label="Open navigation"
+                            aria-hidden="false"
+                          ></i>
+                          <span class="sr-only">Display lesson pages.</span>
+                        </button>
+                      </span>
+                      <span class="tocPopup">
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                      </span>
+                    </h1>
+                  </nav>
+                </div>
+              </div>
+              <div
+                class="col-sm-3 col-xs-12 last-sm first-xs end-sm left-xs mobile-push"
+              >
+                <span class="paging">
+                  <a class="goback hvr-grow mr-1" href="">
+                    <i
+                      class="fas fa-arrow-left"
+                      title="Previous Page"
+                      aria-label="Previous Page"
+                      aria-hidden="false"
+                    ></i>
+                    <span class="sr-only">Navigate to previous page.</span>
+                  </a>
+                  <span class="current-page">1 of 1</span>
+                  <a class="goforward hvr-grow ml-1" href="#">
+                    <i
+                      class="fas fa-arrow-right"
+                      title="Next Page"
+                      aria-label="Next Page"
+                      aria-hidden="false"
+                    ></i>
+                    <span class="sr-only">Navigate to next page.</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Subheading -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="intro">
+              <h2>Lorem ipsum dolor, sit amet consectetur elit.</h2>
+            </div>
+          </div>
+        </div>
+        <!-- /Top Header & Navigation -->
+<!-- Main Area -->
+        <main>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content">
+                <!-- #endregion -->
+          <!-- *** START OF PAGE CONTENT *** -->
+               <!-- HS ELEC Styling-->
+               <link href="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/Asset_Collections/Electives/HS_ELEC.css" rel="stylesheet" type="text/css"/>
+               <!-- END HS ELEC Styling-->
+
+               <section class="row bottom-lg middle-md center-sm csnter-xs">
+                    <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+                         <p class="text-left">As the World Wide Web continues to become more accessible, the scope of uses for websites keeps expanding. Business websites are built and maintained by both large, corporate chains and small, local shops. Social media websites allow us to stay connected with friends and family or share funny memes. News and entertainment write-ups have largely gone digital in lieu of their print predecessors. And of course, we even have websites that help us look for other websites! Using the internet is so integrated into many people's lives, that even some website names have solidified themselves in everyday conversation ("Google it").</p>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-10 col-xs-12 center-xs">
+                         <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/shutterstock_705989578.png" alt="cartoon people physically building a website" class="stand_alone_image" style="border: none;"/>
+                    </div>
+               </section>   
+
+               <p>The combination of faster internet speeds and emerging technologies and trends have made websites more efficient, engaging, and stylish. But no matter how advanced websites become, when stripped down, they are all structured with a language called <strong>HTML</strong>.</p>
+
+               <p>Click the images below for full-sized pictures of popular websites.</p>
+
+               <section class="lightbox">
+                    <section class="row center-xs middle-xs p-0">
+                         <div class="col-sm-4 col-xs-6">
+                              <!-- Lightbox 1 -->
+                              <a data-fancybox="gallery" data-src="#gallery-hidden-content-1" href="javascript:;" class="lightbox-img">
+                                   <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_google.png" class="lightbox-border" alt="ALTTEXT: Enter key opens full-screen view with caption; escape key exits full screen." style="width: 100%;" />
+                              </a>
+                              <div id="gallery-hidden-content-1" class="lightbox-content">
+                                   <figure>
+                                        <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_google.png" class="lightbox-border" alt="google" style="width: 100%; max-width: 900px;" />
+                                        
+                                   </figure>
+                              </div>
+                              <!-- /Lightbox 1 -->   
+                         </div>
+
+                         <div class="col-sm-4 col-xs-6"> 
+                         <!-- Lightbox 2 -->
+                              <a data-fancybox="gallery" data-src="#gallery-hidden-content-2" href="javascript:;" class="lightbox-img">
+                                   <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_NASA.png" class="lightbox-border" alt="ALTTEXT: Enter key opens full-screen view with caption; escape key exits full screen." style="width: 100%;" />
+                              </a>
+                              <div id="gallery-hidden-content-2" class="lightbox-content">
+                                   <figure>
+                                        <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_NASA.png" class="lightbox-border" alt="NASA" style="width: 100%; max-width: 900px;" />
+                                        
+                                   </figure>
+                              </div>
+                         <!-- /Lightbox 2 -->
+                         </div>
+
+                         <div class="col-sm-4 col-xs-6"> 
+                         <!-- Lightbox 3 -->
+                              <a data-fancybox="gallery" data-src="#gallery-hidden-content-3" href="javascript:;" class="lightbox-img">
+                                   <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_PBSkids.png" class="lightbox-border" alt="ALTTEXT: Enter key opens full-screen view with caption; escape key exits full screen." style="width: 100%;" />
+                              </a>
+                              <div id="gallery-hidden-content-3" class="lightbox-content">
+                                   <figure>
+                                        <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_PBSkids.png" class="lightbox-border" alt="PBS Kids" style="width: 100%; max-width: 900px;" />
+                                        
+                                   </figure>
+                              </div>
+                         <!-- /Lightbox 3 -->
+                         </div>
+
+                         <div class="col-sm-4 col-xs-6"> 
+                         <!-- Lightbox 4 -->
+                              <a data-fancybox="gallery" data-src="#gallery-hidden-content-4" href="javascript:;" class="lightbox-img">
+                                   <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_NHM.png" class="lightbox-border" alt="ALTTEXT: Enter key opens full-screen view with caption; escape key exits full screen." style="width: 100%;" />
+                              </a>
+                              <div id="gallery-hidden-content-4" class="lightbox-content">
+                                   <figure>
+                                        <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_NHM.png" class="lightbox-border" alt="Natural History Museum" style="width: 100%; max-width: 900px;" />
+                                        
+                                   </figure>
+                              </div>
+                         <!-- /Lightbox 4 -->
+                         </div>
+
+                         <div class="col-sm-4 col-xs-6"> 
+                         <!-- Lightbox 5 -->
+                              <a data-fancybox="gallery" data-src="#gallery-hidden-content-5" href="javascript:;" class="lightbox-img">
+                                   <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_ASPCA.png" class="lightbox-border" alt="ALTTEXT: Enter key opens full-screen view with caption; escape key exits full screen." style="width: 100%;" />
+                              </a>
+                              <div id="gallery-hidden-content-5" class="lightbox-content">
+                                   <figure>
+                                        <img src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/BasicWebDesign_AE/images/1.1_ASPCA.png" class="lightbox-border" alt="ASPCA" style="width: 100%; max-width: 900px;" />
+                                   </figure>
+                              </div>
+                         <!-- /Lightbox 5 -->
+                         </div>
+                    </section>
+               </section>
+
+
+          <!-- *** END OF PAGE CONTENT *** -->
+                <!-- #region TEMPLATE-END -->
+              </div>
+            </div>
+          </div>
+        </main>
+<!-- /Main Area -->
+      </div>
+      <!-- /Content Container -->
+      <!-- Footer -->
+      <footer>
+        <div class="footer bottomPaging">
+          <div class="row middle-xs">
+            <div class="col-xs-4 start-xs">
+              <a href="" class="footer-btn">
+                <span class="navLeft hvr-grow"
+                  ><i
+                    class="fas fa-arrow-left"
+                    title="Previous Page"
+                    aria-hidden="true"
+                    aria-label="Previous Page"
+                  ></i>
+                  previous</span
+                >
+              </a>
+            </div>
+            <div class="col-xs-4 center-xs">1 of 1</div>
+            <div class="col-xs-4 end-xs">
+              <a href="" class="footer-btn">
+                <span class="navRight hvr-grow"
+                  >next
+                  <i
+                    class="fas fa-arrow-right"
+                    title="Next Page"
+                    aria-hidden="true"
+                    aria-label="Next Page"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </div>
+    <!-- /Main Container -->
+    <!-- Scripts -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout-3.5.0.debug.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout.mapping-latest.debug.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout-bindings/binding-dump.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/toastr.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/moment.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/modal/jquery.modal.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/custom/browser.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/custom/waitingDialog.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/funreveal_fix.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/center/jquery.center.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/validate/1.9/jquery.validate.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/templates/hs/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/templates/hs/jquery.ui.touch.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/jplayer/jquery.jplayer.min.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/fauxpopups.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/spacesavers.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/draganddrop.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ordering.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/sequence.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/matching.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/textfields.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/burgergameHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/cardgame13HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/categorybucketHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/dartgameHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/draganddrop_HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/dragdropimages_HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/spelling_24HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/matchUp.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/crossword.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/fillintheblank.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_global.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_fancybox.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_matching.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_mismatch.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_flashcards.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_multiplechoice.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_interactive_table.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_reveal.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_frq.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_ordering.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_timeline.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_flip_box.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_carousel.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_popover.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_tabs.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/main.js"></script>
+  </body>
+</html>
+<!-- #endregion -->
