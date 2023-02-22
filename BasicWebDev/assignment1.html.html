@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Secondary Blankslate</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ideal.accelerate-ed.com/Content/images/favicon.ico"
+    />
+    <!-- Styles -->
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/templates/high_school/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/bootstrap_custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/templates/high_school/site.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/layout.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/colorbox/colorbox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://ideal.accelerate-ed.com/Content/css/cupertino/jquery-ui-1.10.3.custom.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/math_interactives.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://s3.amazonaws.com/cms.accelerate-ed.com/css/Production/templates/HighSchool/animate.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- jQuery -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/jquery.1.9.1-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <!-- Knockout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
+    <!-- Math Interactives -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/uptown.js"></script>
+    <!-- Modernizr -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/modernizr-2.8.3.js"></script>
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+         tex2jax: {
+      	   inlineMath: [['$$$','$$$'], ['\\(','\\)'], ['`$','$`']],
+      	   processEscapes: true
+         }
+      });
+      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      	MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      		cancel: ["Extension","cancel"],
+      		bcancel: ["Extension","cancel"],
+      		xcancel: ["Extension","cancel"],
+      		cancelto: ["Extension","cancel"]
+      	});
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body class="oneColLiqCtr">
+    <!-- Main Container -->
+    <div id="container">
+      <!-- Content Container -->
+      <div id="contentContainer">
+        <!-- Top Header & Navigation -->
+        <header>
+          <div id="top-navigation">
+            <div class="row middle-xs">
+              <div class="col-sm-9 col-xs-12">
+                <div class="icon-and-header">
+                  <div class="icon"></div>
+                  <nav role="navigation">
+                    <h1 class="title" id="idealMenuTocContents">
+                      <span class="idealMenuTocSelected"
+                        >Example Page Title
+                        <button class="dropdownButton">
+                          <i
+                            class="fas fa-bars"
+                            title="Open navigation"
+                            aria-label="Open navigation"
+                            aria-hidden="false"
+                          ></i>
+                          <span class="sr-only">Display lesson pages.</span>
+                        </button>
+                      </span>
+                      <span class="tocPopup">
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                        <a href="#">
+                          <span class="tocItem">Example Page Title</span>
+                        </a>
+                      </span>
+                    </h1>
+                  </nav>
+                </div>
+              </div>
+              <div
+                class="col-sm-3 col-xs-12 last-sm first-xs end-sm left-xs mobile-push"
+              >
+                <span class="paging">
+                  <a class="goback hvr-grow mr-1" href="">
+                    <i
+                      class="fas fa-arrow-left"
+                      title="Previous Page"
+                      aria-label="Previous Page"
+                      aria-hidden="false"
+                    ></i>
+                    <span class="sr-only">Navigate to previous page.</span>
+                  </a>
+                  <span class="current-page">1 of 1</span>
+                  <a class="goforward hvr-grow ml-1" href="#">
+                    <i
+                      class="fas fa-arrow-right"
+                      title="Next Page"
+                      aria-label="Next Page"
+                      aria-hidden="false"
+                    ></i>
+                    <span class="sr-only">Navigate to next page.</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Subheading -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="intro">
+              <h2>Lorem ipsum dolor, sit amet consectetur elit.</h2>
+            </div>
+          </div>
+        </div>
+        <!-- /Top Header & Navigation -->
+        <!-- Main Area -->
+        <main>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content">
+                <!--* Page Content Start *-->
+
+                <!-- General -->
+                <style>
+                  /* Timeline Slider */
+                  .timeline-slider-container,
+                  .timeline-slider-container * {
+                    box-sizing: border-box;
+                  }
+
+                  .timeline-slider-container {
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 10px 20px 20px 0px;
+                    background-color: #222f3e;
+                    border: 3px solid black;
+                    box-shadow: 3px 3px 5px #ccc;
+                    border-radius: 10px;
+                  }
+
+                  .timeline-slider-container .timeline-slides {
+                    width: 100%;
+                    margin: 0 auto;
+                  }
+
+                  .timeline-slider-container .timeline-slide {
+                    width: 100%;
+                    padding: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    background-color: #ffffff;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-left: 5px solid #c84d59;
+                    display: none;
+                  }
+
+                  .timeline-slider-container .current {
+                    display: block;
+                  }
+
+                  .timeline-slider-container .timeline-slider-btn {
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    background: transparent;
+                    border: none;
+                    font-size: 2.25em;
+                    color: #c84d59;
+                    transition: all 0.3s ease-in-out;
+                    outline: none;
+                    font-size: 2.125em;
+                  }
+
+                  .timeline-slider-container .timeline-slider-btn:first-child {
+                    margin-top: 10px;
+                    margin-bottom: -10px;
+                  }
+
+                  .timeline-slider-container .timeline-slider-btn:disabled {
+                    opacity: 50%;
+                  }
+
+                  .timeline-slider-container .display-area {
+                    overflow: hidden;
+                  }
+
+                  .timeline-slider-container .img-fluid {
+                    width: 100%;
+                  }
+
+                  .timeline-slider-container .progress-row {
+                    padding: 10px;
+                  }
+
+                  .timeline-slider-container #progressbar {
+                    position: relative;
+                    width: 100%;
+                    background-color: #4b6584;
+                    height: 10px;
+                    border-radius: 20px;
+                  }
+
+                  .timeline-slider-container #progressbar .progress {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    height: 10px;
+                    background: #778ca3;
+                    width: 0;
+                    transition: 0.5s ease-in-out;
+                    border-radius: 20px;
+                    padding: 0px;
+                  }
+
+                  /* Timeline Slider Animations */
+                  .timeline-slider-container .animated {
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                  }
+
+                  @-webkit-keyframes fadeInUp {
+                    from {
+                      opacity: 0;
+                      -webkit-transform: translate3d(0, 100%, 0);
+                      transform: translate3d(0, 100%, 0);
+                    }
+
+                    to {
+                      opacity: 1;
+                      -webkit-transform: translate3d(0, 0, 0);
+                      transform: translate3d(0, 0, 0);
+                    }
+                  }
+                  @keyframes fadeInUp {
+                    from {
+                      opacity: 0;
+                      -webkit-transform: translate3d(0, 100%, 0);
+                      transform: translate3d(0, 100%, 0);
+                    }
+
+                    to {
+                      opacity: 1;
+                      -webkit-transform: translate3d(0, 0, 0);
+                      transform: translate3d(0, 0, 0);
+                    }
+                  }
+                  .timeline-slider-container .fadeInUp {
+                    -webkit-animation-name: fadeInUp;
+                    animation-name: fadeInUp;
+                  }
+
+                  @-webkit-keyframes fadeInDown {
+                    from {
+                      opacity: 0;
+                      -webkit-transform: translate3d(0, -100%, 0);
+                      transform: translate3d(0, -100%, 0);
+                    }
+
+                    to {
+                      opacity: 1;
+                      -webkit-transform: translate3d(0, 0, 0);
+                      transform: translate3d(0, 0, 0);
+                    }
+                  }
+                  @keyframes fadeInDown {
+                    from {
+                      opacity: 0;
+                      -webkit-transform: translate3d(0, -100%, 0);
+                      transform: translate3d(0, -100%, 0);
+                    }
+
+                    to {
+                      opacity: 1;
+                      -webkit-transform: translate3d(0, 0, 0);
+                      transform: translate3d(0, 0, 0);
+                    }
+                  }
+                  .timeline-slider-container .fadeInDown {
+                    -webkit-animation-name: fadeInDown;
+                    animation-name: fadeInDown;
+                  }
+
+                  /* Timeline Slider Media Queries */
+                  @media (max-width: 870px) {
+                    .timeline-slider-container .timeline-slider-btn {
+                      font-size: 1.5em;
+                    }
+                  }
+
+                  @media (max-width: 767px) {
+                    .timeline-slider-container .timeline-slider-btn {
+                      font-size: 2.125em;
+                    }
+                  }
+                </style>
+
+                <!-- Timeline Slider -->
+                <div class="timeline-slider-container">
+                  <div class="row top-xs timeline-slides">
+                    <div class="col-xs-2 col-sm-1 center-xs">
+                      <button
+                        class="timeline-slider-btn"
+                        id="timeline-btn-previous"
+                      >
+                        <i
+                          class="fas fa-chevron-up"
+                          title="Previous slide"
+                          aria-hidden="true"
+                        ></i>
+                        <span class="visuallyhidden">Previous slide</span>
+                      </button>
+                      <button
+                        class="timeline-slider-btn"
+                        id="timeline-btn-next"
+                      >
+                        <i
+                          class="fas fa-chevron-down"
+                          title="Next slide"
+                          aria-hidden="true"
+                        ></i>
+                        <span class="visuallyhidden">Next slide</span>
+                      </button>
+                    </div>
+                    <div class="display-area col-xs-10 col-sm-11">
+                      <!-- Start of Slides -->
+
+                      <!-- 1 -->
+                      <div class="timeline-slide current">
+                        <div class="row row middle-xs">
+                          <div class="col-md-3 col-sm-4 col-xs-8 center-xs">
+                            <img
+                              src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/AdvancedDrawing/images/fayum-69.jpg"
+                              alt="fayum-69"
+                              class="img-fluid center-xs"
+                            />
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Saepe asperiores eaque totam
+                              nostrum expedita iure, omnis quod ex dicta at,
+                              voluptate qui, cupiditate repellendus laudantium
+                              aut? Sed dignissimos tempore laboriosam.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /1 -->
+
+                      <!-- 2 -->
+                      <div class="timeline-slide">
+                        <div class="row row middle-xs">
+                          <div class="col-md-3 col-sm-4 col-xs-8 center-xs">
+                            <img
+                              src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/AdvancedDrawing/images/fayum-69.jpg"
+                              alt="fayum-69"
+                              class="img-fluid center-xs"
+                            />
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Saepe asperiores eaque totam
+                              nostrum expedita iure, omnis quod ex dicta at,
+                              voluptate qui, cupiditate repellendus laudantium
+                              aut? Sed dignissimos tempore laboriosam.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /2 -->
+
+                      <!-- 3 -->
+                      <div class="timeline-slide">
+                        <div class="row row middle-xs">
+                          <div class="col-md-3 col-sm-4 col-xs-8 center-xs">
+                            <img
+                              src="https://s3.amazonaws.com/content.accelerate-ed.com/Secondary/docs/AdvancedDrawing/images/fayum-69.jpg"
+                              alt="fayum-69"
+                              class="img-fluid center-xs"
+                            />
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Saepe asperiores eaque totam
+                              nostrum expedita iure, omnis quod ex dicta at,
+                              voluptate qui, cupiditate repellendus laudantium
+                              aut? Sed dignissimos tempore laboriosam.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /3 -->
+
+                      <!-- End of Slides -->
+                    </div>
+                  </div>
+                  <div class="row progress-row">
+                    <div
+                      class="col-xs-offset-2 col-xs-10 col-sm-offset-1 col-sm-11"
+                    >
+                      <div id="progressbar">
+                        <div class="progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Timeline Slider -->
+
+                <script>
+                  'use strict';
+
+                  $(window).on('load', function () {
+                    /**
+                     * Progress Bar
+                     */
+                    //number of steps in all
+                    const totalSlides = $(
+                      '.timeline-slider-container .timeline-slide'
+                    ).length;
+                    //current step
+                    let currentSlide = 1;
+                    //progress element
+                    const progress = $(
+                      '.timeline-slider-container #progressbar .progress'
+                    );
+
+                    function updateProgress() {
+                      progress.css(
+                        'width',
+                        (100 / totalSlides) * currentSlide + '%'
+                      );
+                    }
+                    updateProgress();
+
+                    /**
+                     * Animate Height
+                     */
+                    function animateHeight() {
+                      $('.timeline-slider-container .timeline-slides').animate(
+                        {
+                          height:
+                            $('.timeline-slider-container .timeline-slide')
+                              .parent()
+                              .height() + 'px',
+                        },
+                        1000
+                      );
+                    }
+                    animateHeight();
+
+                    /**
+                     * Slider
+                     */
+                    //disable previous button on first slide
+                    $('.timeline-slider-container #timeline-btn-previous').prop(
+                      'disabled',
+                      true
+                    );
+                    //click events
+                    $('.timeline-slider-container #timeline-btn-next').click(
+                      function () {
+                        $(
+                          '.timeline-slider-container #timeline-btn-previous'
+                        ).prop('disabled', false);
+                        let current = $(
+                          '.timeline-slider-container .timeline-slide.current'
+                        );
+                        current
+                          .next('.timeline-slider-container .timeline-slide')
+                          .removeClass('animated fadeInDown');
+                        current
+                          .next('.timeline-slider-container .timeline-slide')
+                          .addClass('current animated fadeInUp');
+
+                        if (
+                          current.next(
+                            '.timeline-slider-container .timeline-slide'
+                          ).length > 0
+                        ) {
+                          current.removeClass('current');
+                        }
+                        if (!current.next().next().hasClass('timeline-slide')) {
+                          $(
+                            '.timeline-slider-container #timeline-btn-next'
+                          ).prop('disabled', true);
+                        }
+                        //progress bar
+                        currentSlide++;
+                        updateProgress();
+                        //animate height
+                        animateHeight();
+                      }
+                    );
+                    $(
+                      '.timeline-slider-container #timeline-btn-previous'
+                    ).click(function () {
+                      $('.timeline-slider-container #timeline-btn-next').prop(
+                        'disabled',
+                        false
+                      );
+                      let current = $(
+                        '.timeline-slider-container .timeline-slide.current'
+                      );
+                      current
+                        .prev('.timeline-slider-container .timeline-slide')
+                        .removeClass('animated fadeInUp');
+                      current
+                        .prev('.timeline-slider-container .timeline-slide')
+                        .addClass('current animated fadeInDown');
+                      if (
+                        current.prev(
+                          '.timeline-slider-container .timeline-slide'
+                        ).length > 0
+                      ) {
+                        current.removeClass('current');
+                      }
+                      if (!current.prev().prev().hasClass('timeline-slide')) {
+                        $(
+                          '.timeline-slider-container #timeline-btn-previous'
+                        ).prop('disabled', true);
+                      }
+                      //progress bar
+                      currentSlide--;
+                      updateProgress();
+                      //animate height
+                      animateHeight();
+                    });
+
+                    /**
+                     * Window resize
+                     */
+                    $(window).resize(function () {
+                      $('.timeline-slider-container .timeline-slides').css(
+                        'height',
+                        $('.timeline-slider-container .timeline-slide')
+                          .parent()
+                          .height() + 'px'
+                      );
+                    });
+                  });
+                </script>
+
+                <!--* Page Content End *-->
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- /Main Area -->
+      </div>
+      <!-- /Content Container -->
+      <!-- Footer -->
+      <footer>
+        <div class="footer bottomPaging">
+          <div class="row middle-xs">
+            <div class="col-xs-4 start-xs">
+              <a href="" class="footer-btn">
+                <span class="navLeft hvr-grow"
+                  ><i
+                    class="fas fa-arrow-left"
+                    title="Previous Page"
+                    aria-hidden="true"
+                    aria-label="Previous Page"
+                  ></i>
+                  previous</span
+                >
+              </a>
+            </div>
+            <div class="col-xs-4 center-xs">1 of 1</div>
+            <div class="col-xs-4 end-xs">
+              <a href="" class="footer-btn">
+                <span class="navRight hvr-grow"
+                  >next
+                  <i
+                    class="fas fa-arrow-right"
+                    title="Next Page"
+                    aria-hidden="true"
+                    aria-label="Next Page"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </div>
+    <!-- /Main Container -->
+    <!-- Scripts -->
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout-3.5.0.debug.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout.mapping-latest.debug.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/knockout-bindings/binding-dump.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/toastr.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/moment.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/modal/jquery.modal.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/custom/browser.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/custom/waitingDialog.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/recording/recorder.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/recording/recording_custom.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/funreveal_fix.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/center/jquery.center.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/validate/1.9/jquery.validate.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/templates/hs/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/templates/hs/jquery.ui.touch.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script src="https://ideal.accelerate-ed.com/Scripts/jquery/plugins/jplayer/jquery.jplayer.min.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/fauxpopups.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/spacesavers.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/draganddrop.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ordering.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/sequence.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/matching.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/textfields.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/burgergameHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/cardgame13HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/categorybucketHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/dartgameHS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/draganddrop_HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/dragdropimages_HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/spelling_24HS.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/matchUp.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/crossword.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/fillintheblank.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_global.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_fancybox.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_matching.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_mismatch.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_flashcards.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_multiplechoice.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_interactive_table.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_reveal.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_frq.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_ordering.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_timeline.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_flip_box.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/ae_carousel.js"></script>
+    <script src="https://s3.amazonaws.com/cms.accelerate-ed.com/scripts/Production/hs/main.js"></script>
+  </body>
+</html>
